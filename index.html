@@ -3,115 +3,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arun Gowda Edits</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
-      color: #f1f1f1;
-      line-height: 1.6;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1589571894960-20bbe2828ad7?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
       color: white;
+      background: url('https://images.unsplash.com/photo-1608158576516-3be4eb9c5df9?fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
       text-align: center;
-      padding: 120px 20px 80px;
     }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
     }
-    header p {
-      font-size: 1.2em;
+    h1 {
+      margin-top: 1rem;
+      font-size: 2.5rem;
     }
-    nav {
-      text-align: center;
-      margin: 30px 0;
+    .subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
     }
-    nav a {
-      display: inline-block;
-      margin: 10px 15px;
-      padding: 12px 25px;
-      color: #fff;
-      text-decoration: none;
-      background: #ff4747;
+    .button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: white;
+      color: black;
+      font-weight: bold;
       border-radius: 30px;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      background: #e43d3d;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .services ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .services li::before {
-      content: "🎬 ";
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: #181818;
-      color: #888;
-      font-size: 0.9em;
-    }
-    a.portfolio-link {
       display: inline-block;
-      margin-top: 10px;
-      color: #ff4747;
+      transition: background 0.3s;
+      text-decoration: none;
     }
-    @media(max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-      nav a {
-        padding: 10px 20px;
-      }
+    .button:hover {
+      background: #ddd;
+    }
+    .socials {
+      margin-top: 2rem;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    .section {
+      margin-top: 4rem;
+    }
+    .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .logo-grid img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+    .video-grid {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Arun Gowda Edits</h1>
-    <p>Freelance Video Editor | 4+ Years of Cinematic Edits</p>
-    <nav>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m Arun Gowda, a freelance and professional video editor with over 4 years of experience creating compelling edits for clients around the world. I specialize in Adobe Premiere Pro, After Effects, and DaVinci Resolve—bringing storytelling and motion together to elevate your content.</p>
-  </section>
-  <section id="services" class="services">
-    <h2>What I Do</h2>
-    <ul>
-      <li>Short-form edits (Reels, Shorts, TikTok)</li>
-      <li>Cinematic YouTube or event videos</li>
-      <li>Color grading and transitions</li>
-      <li>Sound sync and polish</li>
-    </ul>
-  </section>
-  <section id="portfolio">
-    <h2>My Work</h2>
-    <p>View my latest projects and cinematic edits:</p>
-    <a class="portfolio-link" href="https://www.behance.net/arungowda" target="_blank">Visit My Behance Portfolio →</a>
-  </section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Let’s bring your vision to life. Reach out today:</p>
-    <p>📧 <a href="mailto:youremail@example.com" style="color:#fff;">youremail@example.com</a></p>
-    <p>📍 Based in India — Available Worldwide</p>
-  </section>
-  <footer>
-    &copy; 2025 Arun Gowda Edits. All rights reserved.
-  </footer>
+  <div class="container">
+    <img src="your-profile-pic.jpg" alt="Arun Gowda" class="profile-pic" />
+    <h1>Arun Gowda</h1>
+    <p class="subtitle">📹 Arun Gowda Edits<br>📍 Freelance & Professional Video Editor<br>🎞️ Transforming ideas into cinematic visuals</p>
+    <a href="#work" class="button">View My Work →</a>
+
+    <div class="socials">
+      <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram"></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/speech-bubble-with-dots.png" alt="Chat"></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/phone.png" alt="Phone"></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/new-post.png" alt="Email"></a>
+    </div>
+
+    <div class="section">
+      <div class="logo-grid">
+        <img src="your-logo1.png" alt="Logo 1" />
+        <img src="your-logo2.png" alt="Logo 2" />
+        <img src="your-logo3.png" alt="Logo 3" />
+      </div>
+    </div>
+
+    <div class="section" id="work">
+      <img src="https://img.icons8.com/fluency/96/instagram-new.png" alt="Instagram" />
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/your-video-id1"></iframe>
+        <iframe src="https://www.youtube.com/embed/your-video-id2"></iframe>
+        <iframe src="https://www.youtube.com/embed/your-video-id3"></iframe>
+        <iframe src="https://www.youtube.com/embed/your-video-id4"></iframe>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
