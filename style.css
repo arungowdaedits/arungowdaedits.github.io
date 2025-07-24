@@ -55,6 +55,36 @@ header h1 {
   padding: 2rem;
   border-radius: 10px;
 }
+.social-links {
+  padding: 40px;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
+
+.social-links h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.social-links .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 100px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.social-links img:hover {
+  filter: none;
+  transform: scale(1.05);
+}
 footer {
   text-align: center;
   padding: 2rem 1rem;
