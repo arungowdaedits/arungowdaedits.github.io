@@ -1,258 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arun Gowda | Cinematic Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #000;
-      color: #fff;
-      scroll-behavior: smooth;
-    }
-    .hero {
-      position: relative;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-    .background-video {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      z-index: -2;
-    }
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: -1;
-    }
-    .hero-content {
-      text-align: center;
-      animation: fadeIn 2s ease-in;
-    }
-    .hero-content h1 {
-      font-size: 4rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    .hero-content p {
-      font-size: 1.5rem;
-      font-weight: 300;
-      margin-bottom: 1rem;
-    }
-    .cta {
-      padding: 0.8rem 1.5rem;
-      background: #e50914;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-    .cta:hover {
-      background: #ff0f20;
-    }
-    .grid-section, .clients {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .video-grid iframe {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .video-grid iframe:hover {
-      transform: scale(1.03);
-    }
-    .logos {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-    }
-    .logos a img {
-      max-height: 60px;
-      opacity: 0.8;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-    .logos a:hover img {
-      transform: scale(1.1);
-      opacity: 1;
-    }
-    .contact-section {
-      padding: 4rem 2rem;
-      background: #111;
-      text-align: center;
-    }
-    .contact-section input, .contact-section textarea {
-      width: 90%;
-      max-width: 400px;
-      margin: 0.5rem 0;
-      padding: 0.75rem;
-      border-radius: 4px;
-      border: none;
-    }
-    .contact-section input::placeholder, .contact-section textarea::placeholder {
-      color: #999;
-    }
-    .contact-section button {
-      padding: 0.75rem 1.5rem; 
-      margin-top: 1rem;
-      background-color: #e50914;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .contact-section button:hover {
-      background-color: #ff0f20;
-    }
-    .resume-btn {
-      margin-top: 2rem;
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #e50914;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .resume-btn:hover {
-      background-color: #ff0f20;
-    }
-    footer {
-      padding: 2rem;
-      background: #111;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-    footer a {
-      display: inline-block;
-      color: #e50914;
-      margin: 0.25rem 0.75rem;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <title>Arun Gowda</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<section style="max-width: 700px; margin: 40px auto; padding: 20px; background: #111; border-radius: 20px; box-shadow: 0 0 20px rgba(255,255,255,0.1); color: #fff; font-family: sans-serif; text-align: center;">
-  <h2 style="margin-bottom: 20px; font-size: 1.8rem;">🎬 My Video Project</h2>
-  
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
-    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-      src="https://www.youtube.com/embed/84CH9SNzhdQ"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <header>
+    <h1>Arun Gowda</h1>
+    <p>Cinematic Video Editor & Visual Storyteller</p>
+  </header>
 
-  <a href="https://youtu.be/84CH9SNzhdQ" target="_blank" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #ff0000; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
-    ▶ Watch on YouTube
-  </a>
-</section>
-
-  <div class="hero">
-    <div class="overlay"></div>
-    <video autoplay muted loop class="background-video">
-      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="sample-reel.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
     </video>
-    <div class="hero-content" data-aos="fade-up">
-      <img src="assets/profile.jpg" alt="Arun Gowda" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 1rem; border: 3px solid white;">
-      <h1>ARUN GOWDA</h1>
-      <p>Senior Video Editor</p>
-      <a href="#portfolio" class="cta">Watch My Work</a>
-      <br>
-      <a href="assets/resume.pdf" class="resume-btn" download>Download Resume</a>
-    </div>
-  </div>
-
-  <section id="portfolio" class="grid-section">
-    <h2 data-aos="fade-right">Featured Projects</h2>
-    <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/VoXLFE9DWA0" 
-        frameborder="0" 
-        allowfullscreen 
-        data-aos="zoom-in">
-</iframe>
-      <iframe src="https://youtu.com/embed/84CH9SNzhdQ" frameborder="0" allowfullscreen data-aos="zoom-in"></iframe>
-      <iframe src="https://www.youtube.com/embed/YbJOTdZBX1g" frameborder="0" allowfullscreen data-aos="zoom-in"></iframe>
-      <iframe src="https://youtu.com/embed/84CH9SNzhdQ" frameborder="0" allowfullscreen data-aos="zoom-in"></iframe>
-      <a href="https://youtu.be/VoXLFE9DWA0" 
-   target="_blank" 
-   class="video-thumbnail"
-   data-aos="zoom-in">
-  <img src="assets/thumbnail-new.jpg" alt="My New Video">
-  <div class="play-icon">▶</div>
-</a>
+    <div class="overlay">
+      <h2>Crafting Stories Through Frames</h2>
     </div>
   </section>
 
-  <section class="clients">
-    <h2 data-aos="fade-left">Clients I've Worked With</h2>
-    <div class="logos">
-      <a href="https://www.youtube.com/@AskMysuru" target="_blank"><img src="assets/logo.png" alt="Client Logo" data-aos="flip-left" /></a>
-      <a href="https://www.youtube.com/@360mysoreproperties" target="_blank"><img src="assets/Untitled-1.jpg" alt="Client Logo" data-aos="flip-left" /></a>
-      <a href="https://client3.com" target="_blank"><img src="assets/WhatsApp.png" alt="Client Logo" data-aos="flip-left" /></a>
-      <a href="https://client4.com" target="_blank"><img src="assets/client1.png" alt="Client Logo" data-aos="flip-left" /></a>
-      <a href="https://client5.com" target="_blank"><img src="assets/client2.png" alt="Client Logo" data-aos="flip-left" /></a>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I’m Sathish, a cinematic editor passionate about storytelling. From trailers to reels, I bring emotion and energy to every frame.</p>
+  </section>
+
+  <section class="work">
+    <h2>My Work</h2>
+    <div class="grid">
+      <div class="video-box">Sample Video 1</div>
+      <div class="video-box">Sample Video 2</div>
+      <div class="video-box">Sample Video 3</div>
     </div>
   </section>
 
-  <section class="contact-section" id="contact">
-    <h2 data-aos="fade-right">Get In Touch</h2>
-    <form data-aos="fade-up">
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="email" placeholder="Your Email" required><br>
-      <textarea rows="5" placeholder="Your Message" required></textarea><br>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer data-aos="fade-up">
-    <p>Follow Arun Gowda on:</p>
-    <a href="https://www.instagram.com/aru_gowda_edits" target="_blank">Instagram: @aru_gowda_edits</a>
-    <a href="https://www.behance.net/arungowda/projects" target="_blank">Behance: @arungowda</a>
-    <p style="margin-top: 1rem; color: #888;">&copy; Arun Gowda</p>
+  <footer>
+    <p>Follow me on Instagram: <a href="https://instagram.com/arungowdaedits" target="_blank">@arungowdaedits</a></p>
   </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1200,
-      once: true
-    });
-  </script>
 </body>
 </html>
-
