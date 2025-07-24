@@ -8,46 +8,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
- <script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.slide');
-
-  function showNextSlide() {
-    slides.forEach((slide, index) => {
-      slide.classList.remove('active');
-    });
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-  }
-
-  // Show first slide immediately
-  slides[0].classList.add('active');
-
-  // Auto-change every 3 seconds
-  setInterval(showNextSlide, 3000);
-</script>
-</script>
   <header>
     <h1>Arun Gowda</h1>
     <p>Cinematic Video Editor & Visual Storyteller</p>
   </header>
- <section class="crafting-slideshow">
-  <h2 class="motion-title">Crafting Cinematic Stories</h2>
-  <div class="slideshow-container">
-    <img class="slide" src="assets/slide1.jpg" alt="Slide 1" />
-    <img class="slide" src="assets/slide2.jpg" alt="Slide 2" />
-    <img class="slide" src="assets/slide3.jpg" alt="Slide 3" />
-    <img class="slide" src="assets/slide4.jpg" alt="Slide 4" />
-    <img class="slide" src="assets/slide5.jpg" alt="Slide 5" />
-    <img class="slide" src="assets/slide6.jpg" alt="Slide 6" />
-    <img class="slide" src="assets/slide7.jpg" alt="Slide 7" />
-    <img class="slide" src="assets/slide8.jpg" alt="Slide 8" />
-    <img class="slide" src="assets/slide9.jpg" alt="Slide 9" />
-    <img class="slide" src="assets/slide10.jpg" alt="Slide 10" />
-    <img class="slide" src="assets/slide11.jpg" alt="Slide 11" />
-    <img class="slide" src="assets/slide12.jpg" alt="Slide 12" />
-  </div>
-</section>
+
+  <section class="crafting-slideshow">
+    <h2 class="motion-title">Crafting Cinematic Stories</h2>
+    <div class="slideshow-container">
+      <img class="slide" src="assets/slide1.jpg" alt="Slide 1" />
+      <img class="slide" src="assets/slide2.jpg" alt="Slide 2" />
+      <img class="slide" src="assets/slide3.jpg" alt="Slide 3" />
+      <img class="slide" src="assets/slide4.jpg" alt="Slide 4" />
+      <img class="slide" src="assets/slide5.jpg" alt="Slide 5" />
+      <img class="slide" src="assets/slide6.jpg" alt="Slide 6" />
+      <img class="slide" src="assets/slide7.jpg" alt="Slide 7" />
+      <img class="slide" src="assets/slide8.jpg" alt="Slide 8" />
+      <img class="slide" src="assets/slide9.jpg" alt="Slide 9" />
+      <img class="slide" src="assets/slide10.jpg" alt="Slide 10" />
+      <img class="slide" src="assets/slide11.jpg" alt="Slide 11" />
+      <img class="slide" src="assets/slide12.jpg" alt="Slide 12" />
+    </div>
+  </section>
 
   <section class="hero">
     <video autoplay muted loop>
@@ -59,48 +41,63 @@
     </div>
   </section>
 
-<section class="about">
-  <h2>About Me</h2>
-  <p>Hi, I'm Arun Gowda — a passionate cinematic editor and digital creator. I bring stories to life through frames, rhythm, and emotion. Whether it's a cinematic reel, an informative video, or a dramatic short, I craft each piece to leave a lasting impact. Every cut matters, every second tells a story.</p>
-</section>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Arun Gowda — a passionate cinematic editor and digital creator. I bring stories to life through frames, rhythm, and emotion. Whether it's a cinematic reel, an informative video, or a dramatic short, I craft each piece to leave a lasting impact. Every cut matters, every second tells a story.</p>
+  </section>
 
- <section class="work">
-  <h2>My Work</h2>
-  <div class="grid">
-    <div class="video-box">• Instagram Reels – Fast-paced edits with impact</div>
-    <div class="video-box">• YouTube Shorts – Informative, cinematic, scroll-stopping</div>
-    <div class="video-box">• Client Projects – Brand stories, promos, trailers</div>
-  </div>
-</section>
+  <section class="work">
+    <h2>My Work</h2>
+    <div class="grid">
+      <div class="video-box">• Instagram Reels – Fast-paced edits with impact</div>
+      <div class="video-box">• YouTube Shorts – Informative, cinematic, scroll-stopping</div>
+      <div class="video-box">• Client Projects – Brand stories, promos, trailers</div>
+    </div>
+  </section>
 
   <section class="social-links">
-  <h2>Explore & Collaborate</h2>
-  <div class="logos">
-    <!-- Placeholder logos - replace with actual image file paths -->
-    <a href="https://www.youtube.com/@AskMysuru" target="_blank">
-      <img src="assets/askmysuru-logo.png" alt="Ask Mysuru" />
-    </a>
-    <a href="https://www.youtube.com/@360mysoreproperties/videos" target="_blank">
-      <img src="assets/360mysore-logo.png" alt="360 Mysore Properties" />
-    </a>
-    <a href="https://www.instagram.com/onemantalks/reels/" target="_blank">
-      <img src="assets/onemantalks-logo.png" alt="One Man Talks" />
-    </a>
-    <a href="https://www.instagram.com/tranquilsaloon/" target="_blank">
-      <img src="assets/tranquil-logo.png" alt="Tranquil Saloon" />
-    </a>
-    <a href="https://www.instagram.com/cutnsmile/reels/" target="_blank">
-      <img src="assets/cutnsmile-logo.png" alt="Cut N Smile" />
-    </a>
-    <a href="https://www.youtube.com/@jhankarmusic" target="_blank">
-      <img src="assets/jhankarmusic-logo.png" alt="Jhankar Music" />
-    </a>
-  </div>
-</section>
-
+    <h2>Explore & Collaborate</h2>
+    <div class="logos">
+      <a href="https://www.youtube.com/@AskMysuru" target="_blank">
+        <img src="assets/askmysuru-logo.png" alt="Ask Mysuru" />
+      </a>
+      <a href="https://www.youtube.com/@360mysoreproperties/videos" target="_blank">
+        <img src="assets/360mysore-logo.png" alt="360 Mysore Properties" />
+      </a>
+      <a href="https://www.instagram.com/onemantalks/reels/" target="_blank">
+        <img src="assets/onemantalks-logo.png" alt="One Man Talks" />
+      </a>
+      <a href="https://www.instagram.com/tranquilsaloon/" target="_blank">
+        <img src="assets/tranquil-logo.png" alt="Tranquil Saloon" />
+      </a>
+      <a href="https://www.instagram.com/cutnsmile/reels/" target="_blank">
+        <img src="assets/cutnsmile-logo.png" alt="Cut N Smile" />
+      </a>
+      <a href="https://www.youtube.com/@jhankarmusic" target="_blank">
+        <img src="assets/jhankarmusic-logo.png" alt="Jhankar Music" />
+      </a>
+    </div>
+  </section>
 
   <footer>
     <p>Follow me on Instagram: <a href="https://instagram.com/arungowdaedits" target="_blank">@arungowdaedits</a></p>
   </footer>
+
+  <!-- ✅ SLIDESHOW SCRIPT PLACED AT END -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slide');
+
+      function showNextSlide() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+
+      slides[0].classList.add('active');
+      setInterval(showNextSlide, 3000);
+    });
+  </script>
 </body>
 </html>
