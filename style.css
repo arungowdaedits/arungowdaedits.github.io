@@ -3,29 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #0e0e0e;
   color: #fff;
   line-height: 1.6;
 }
+
 header {
   text-align: center;
   padding: 2rem 1rem;
 }
+
 header h1 {
   font-size: 3rem;
 }
+
 .hero {
   position: relative;
   height: 60vh;
   overflow: hidden;
 }
+
 .hero video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .hero .overlay {
   position: absolute;
   top: 0;
@@ -37,24 +43,30 @@ header h1 {
   justify-content: center;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .hero .overlay h2 {
   font-size: 2.5rem;
 }
-.about, .work {
+
+.about,
+.work {
   padding: 3rem 1rem;
   text-align: center;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .video-box {
   background: #1e1e1e;
   padding: 2rem;
   border-radius: 10px;
 }
+
 .social-links {
   padding: 40px;
   text-align: center;
@@ -85,21 +97,30 @@ header h1 {
   filter: none;
   transform: scale(1.05);
 }
+
 footer {
   text-align: center;
   padding: 2rem 1rem;
   background: #111;
   font-size: 0.9rem;
 }
+
 footer a {
   color: #00aced;
   text-decoration: none;
 }
+
+/* === Slideshow Styling === */
 .crafting-slideshow {
   text-align: center;
   margin: 40px auto;
   max-width: 800px;
   position: relative;
+}
+
+.crafting-slideshow h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .slideshow-container {
@@ -117,12 +138,13 @@ footer a {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out, transform 1s ease;
   border-radius: 12px;
 }
 
 .slide.active {
   opacity: 1;
+  transform: scale(1.02);
   z-index: 1;
 }
-
