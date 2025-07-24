@@ -8,10 +8,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlides() {
+    slides.forEach(slide => (slide.style.display = 'none'));
+    slideIndex = (slideIndex + 1) > slides.length ? 1 : slideIndex + 1;
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 3000); // every 3 seconds
+  }
+
+  showSlides();
+</script>
   <header>
     <h1>Arun Gowda</h1>
     <p>Cinematic Video Editor & Visual Storyteller</p>
   </header>
+  <section class="crafting-slideshow">
+  <h2>Crafting Cinematic Stories</h2>
+  <div class="slideshow-container">
+    <img class="slide" src="assets/slide1.jpg" alt="Slide 1" />
+    <img class="slide" src="assets/slide2.jpg" alt="Slide 2" />
+    <img class="slide" src="assets/slide3.jpg" alt="Slide 3" />
+    <img class="slide" src="assets/slide4.jpg" alt="Slide 4" />
+    <img class="slide" src="assets/slide5.jpg" alt="Slide 5" />
+    <img class="slide" src="assets/slide6.jpg" alt="Slide 6" />
+    <img class="slide" src="assets/slide7.jpg" alt="Slide 7" />
+    <img class="slide" src="assets/slide8.jpg" alt="Slide 8" />
+    <img class="slide" src="assets/slide9.jpg" alt="Slide 9" />
+    <img class="slide" src="assets/slide10.jpg" alt="Slide 10" />
+    <img class="slide" src="assets/slide11.jpg" alt="Slide 11" />
+    <img class="slide" src="assets/slide12.jpg" alt="Slide 12" />
+  </div>
+</section>
 
   <section class="hero">
     <video autoplay muted loop>
