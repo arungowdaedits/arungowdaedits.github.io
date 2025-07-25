@@ -5,6 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arun Gowda - Cinematic Editor</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('assets/background.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      background-color: rgba(0, 255, 128, 0.1);
+      backdrop-filter: blur(5px);
+    }
+
+    .logo {
+      width: 100px;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #00ff7f;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .crafting-slideshow {
+      padding: 2rem 1rem;
+    }
+
+    .crafting-slideshow h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00ff7f;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 90%;
+      max-width: 1000px;
+      height: 450px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 128, 0.3);
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      border-radius: 20px;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .clients {
+      margin: 3rem 1rem;
+    }
+
+    .clients h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00ff7f;
+    }
+
+    .client-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .client-logos img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,255,128,0.5);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .client-logos img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 2rem 1rem;
+      background-color: rgba(0, 255, 128, 0.1);
+      backdrop-filter: blur(5px);
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #00ff7f;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,7 +135,18 @@
   <section class="crafting-slideshow">
     <h2>Crafting Cinematic Stories</h2>
     <div class="slideshow-container">
-      <img class="slide active" src="assets/slide1.jpg" alt="Slide 1" /><img class="slide" src="assets/slide2.jpg" alt="Slide 2" /><img class="slide" src="assets/slide3.jpg" alt="Slide 3" /><img class="slide" src="assets/slide4.jpg" alt="Slide 4" /><img class="slide" src="assets/slide5.jpg" alt="Slide 5" /><img class="slide" src="assets/slide6.jpg" alt="Slide 6" /><img class="slide" src="assets/slide7.jpg" alt="Slide 7" /><img class="slide" src="assets/slide8.jpg" alt="Slide 8" /><img class="slide" src="assets/slide9.jpg" alt="Slide 9" /><img class="slide" src="assets/slide10.jpg" alt="Slide 10" /><img class="slide" src="assets/slide11.jpg" alt="Slide 11" /><img class="slide" src="assets/slide12.jpg" alt="Slide 12" />
+      <img class="slide active" src="assets/slide1.jpg" alt="Slide 1" />
+      <img class="slide" src="assets/slide2.jpg" alt="Slide 2" />
+      <img class="slide" src="assets/slide3.jpg" alt="Slide 3" />
+      <img class="slide" src="assets/slide4.jpg" alt="Slide 4" />
+      <img class="slide" src="assets/slide5.jpg" alt="Slide 5" />
+      <img class="slide" src="assets/slide6.jpg" alt="Slide 6" />
+      <img class="slide" src="assets/slide7.jpg" alt="Slide 7" />
+      <img class="slide" src="assets/slide8.jpg" alt="Slide 8" />
+      <img class="slide" src="assets/slide9.jpg" alt="Slide 9" />
+      <img class="slide" src="assets/slide10.jpg" alt="Slide 10" />
+      <img class="slide" src="assets/slide11.jpg" alt="Slide 11" />
+      <img class="slide" src="assets/slide12.jpg" alt="Slide 12" />
     </div>
   </section>
 
@@ -37,6 +167,18 @@
     <p>Follow me: @aru_gowda_edits</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides() {
+      slides.forEach((slide) => slide.classList.remove('active'));
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add('active');
+      setTimeout(showSlides, 3000);
+    }
+
+    document.addEventListener('DOMContentLoaded', showSlides);
+  </script>
 </body>
 </html>
