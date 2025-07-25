@@ -168,17 +168,14 @@
   </footer>
 
   <script>
-    let slideIndex = 0;
     const slides = document.querySelectorAll('.slide');
+    let index = 0;
 
-    function showSlides() {
-      slides.forEach((slide) => slide.classList.remove('active'));
-      slideIndex = (slideIndex + 1) % slides.length;
-      slides[slideIndex].classList.add('active');
-      setTimeout(showSlides, 3000);
-    }
-
-    document.addEventListener('DOMContentLoaded', showSlides);
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 3000);
   </script>
 </body>
 </html>
