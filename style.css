@@ -3,20 +3,31 @@ body {
   font-family: Arial, sans-serif;
   background-color: #0e0e0e;
   color: white;
+  transition: background-color 1s ease-in-out;
 }
+
 header {
   text-align: center;
   padding: 2rem;
   background-color: #1a1a1a;
+  animation: fadeIn 1s ease forwards;
 }
+
 .logo {
   height: 100px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
+.logo:hover {
+  transform: scale(1.1);
+}
+
 .crafting-slideshow {
   text-align: center;
   padding: 2rem;
+  animation: fadeUp 1s ease-in-out forwards;
 }
+
 .slideshow-container {
   position: relative;
   width: 80%;
@@ -24,34 +35,75 @@ header {
   height: 400px;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 0 30px rgba(102, 255, 102, 0.2);
 }
+
 .slide {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 .slide.active {
   opacity: 1;
+  transform: scale(1.02);
 }
+
 .clients {
   text-align: center;
   padding: 2rem;
   background-color: #1a1a1a;
+  animation: fadeUp 1.2s ease forwards;
 }
+
 .client-logos img {
   height: 60px;
   margin: 30px;
   cursor: pointer;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
+.client-logos img:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #111;
+  animation: fadeIn 2s ease forwards;
 }
+
 a {
   color: #66ff66;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #00ff99;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
